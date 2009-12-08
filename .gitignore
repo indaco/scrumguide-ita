@@ -1,0 +1,21 @@
+# use glob syntax.
+*~
+*.bak
+*.div
+*.aux
+*.out
+*.ps
+*.pdf
+*.off
+*.old
+.DS_Store
+
+# logs
+# derby.log
+log
+*.log
+
+# other scm
+.svn
+.CVS
+.hg*
