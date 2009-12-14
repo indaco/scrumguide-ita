@@ -1,29 +1,35 @@
-\documentclass[a4paper,12pt,oneside]{article}
+\documentclass[italian, a4paper, 12pt, oneside]{article}
 \usepackage[italian]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{color}
 \usepackage[layout=modern]{layout/advancedcoverpage}
+\usepackage[scaled=.98]{helvet}
 
-\hypersetup{
-    colorlinks=false
-}
+\linespread{1.2}
+\definecolor{Blue}{RGB}{63, 99, 141}
+\hypersetup{ colorlinks=true }
+\hyphenation{pre-ve-di-bi-li-t\`a,riu-sci-re,esi-ste-re,in-te-ra-zio-ne}
 
 \begin{document}
+	\title{\color{Blue}{Guida a SCRUM}}
+	\subtitle{Scrum: Sviluppato e sostenuto da \\ Ken Schwaber e Jeff Sutherland}
+	\subsubtitle{Novembre 2009}
+	\author{Traduzione Italiana a cura di Carlo Beschi e Mirco Veltri}
+	\presentedto{SCRUM.ORG -- http://scrum.org}
+	\date{}
 
-\title{Guida a Scrum}
-\subtitle{Scrum: Sviluppato e sostenuto da \\ Ken Schwaber e Jeff Sutherland}
-\subsubtitle{Novembre 2009}
-\author{Traduzione Italiana a cura di Carlo Beschi e Mirco Veltri}
-\presentedto{\href{http://scrum.org}{Scrum.org}}
-\date{}
+	\maketitle
+	\sffamily
 
-\maketitle
-
-\input{text/sec1} % Acknowledgements
-\input{text/sec2} % Purpose, Scrum Theory and pillars
-\input{text/sec3} % Scrum Content
-\input{text/sec4} % Scrum Roles
-\input{text/sec5} % Time-boxes
-\input{text/sec6} % Scrum Artifacts
-\input{text/sec7} % Final Thoughts
+	\input{text/sec1} % Introduzione e Ringraziamenti
+	\input{text/sec2} % Scopo, La Teoria Di Scrum
+	\input{text/sec3} % Il Concetto Di Scrum
+	\input{text/sec4} % I Ruoli In Scrum
+	\input{text/sec5} % La Gestione Del Tempo
+	\input{text/sec6} % Gli Artefatti
+	\input{text/sec7} % Considerazion Finali
 	
 \end{document}
