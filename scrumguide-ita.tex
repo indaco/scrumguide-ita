@@ -1,27 +1,47 @@
-\documentclass[italian, a4paper, 12pt, oneside]{article}
+\documentclass[a4paper,12pt,oneside]{article}
+
+\usepackage[plainpages=false]{hyperref}
 \usepackage[italian]{babel}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
 \usepackage{textcomp}
 \usepackage{color}
-\usepackage[layout=modern]{layout/advancedcoverpage}
+\usepackage[layout=modern]{./layout/advancedcoverpage}
 \usepackage[scaled=.98]{helvet}
 
 \linespread{1.2}
 \definecolor{Blue}{RGB}{63, 99, 141}
 \hypersetup{ colorlinks=true }
-\hyphenation{pre-ve-di-bi-li-t\`a,riu-sci-re,esi-ste-re,in-te-ra-zio-ne}
+%\hyphenation{pre-ve-di-bi-li-t\`a, riu-sci-re, esi-ste-re, in-te-ra-zio-ne}
 
+%%
+% TIP Command
+%%%
+\newcommand{\tip}[1]{
+\vspace{0.4cm}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\begin{large}Suggerimento\end{large}\\
+{\color{Blue}{#1}}
+\end{minipage}
+}
+\vspace{0.4cm}
+\linebreak
+}
+
+%%
+% Document
+%%%
 \begin{document}
 	\title{\color{Blue}{Guida a SCRUM}}
 	\subtitle{Scrum: Sviluppato e sostenuto da \\ Ken Schwaber e Jeff Sutherland}
-	\subsubtitle{Novembre 2009}
-	\author{Traduzione Italiana a cura di Carlo Beschi e Mirco Veltri}
+	\subsubtitle{Gennaio 2010}
+	\author{Traduzione Italiana a cura di Mirco Veltri\\Revisione di Carlo Beschi}
 	\presentedto{SCRUM.ORG -- http://scrum.org}
 	\date{}
 
 	\maketitle
+	\clearpage\pagenumbering{arabic}
 	\sffamily
 
 	\input{text/sec1} % Introduzione e Ringraziamenti
