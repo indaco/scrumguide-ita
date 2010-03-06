@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,oneside]{article}
+\documentclass[a4paper,12pt,oneside,titlepage]{article}
 
 \usepackage[plainpages=false]{hyperref}
 \usepackage[italian]{babel}
@@ -8,24 +8,42 @@
 \usepackage{color}
 \usepackage[layout=modern]{./layout/advancedcoverpage}
 \usepackage[scaled=.98]{helvet}
+% Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{© 2008-2010 Ken Schwaber and Jeff Sutherland, All Rights Reserved} 
+\rfoot{ | \thepage} 
+
+% Scrum logo
+\usepackage[cc]{./layout/titlepic}
+\usepackage{graphicx}
+\titlepic{\includegraphics[width=\textwidth]{./images/scrum_logo.jpg}}
 
 \linespread{1.2}
 \definecolor{Blue}{RGB}{63, 99, 141}
-\hypersetup{ colorlinks=true }
+%\hypersetup{ colorlinks=true }
 %\hyphenation{pre-ve-di-bi-li-t\`a, riu-sci-re, esi-ste-re, in-te-ra-zio-ne}
 
-%%
 % TIP Command
-%%%
 \newcommand{\tip}[1]{
 \vspace{0.4cm}
 \fbox{
 \begin{minipage}{0.9\textwidth}
-\begin{large}Suggerimento\end{large}\\
+\begin{large}Consiglio\end{large}\\
 {\color{Blue}{#1}}
 \end{minipage}
 }
 \vspace{0.4cm}
+\linebreak
+}
+
+% TALE Command
+\newcommand{\tale}[1]{
+\vspace{0.6cm}
+\begin{minipage}{0.9\textwidth}
+{\color{Blue}{#1}}
+\end{minipage}
+\vspace{0.6cm}
 \linebreak
 }
 
@@ -34,10 +52,10 @@
 %%%
 \begin{document}
 	\title{\color{Blue}{Guida a SCRUM}}
-	\subtitle{Scrum: Sviluppato e sostenuto da \\ Ken Schwaber e Jeff Sutherland}
-	\subsubtitle{Gennaio 2010}
-	\author{Traduzione Italiana a cura di Mirco Veltri\\Revisione di Carlo Beschi}
-	\presentedto{SCRUM.ORG -- http://scrum.org}
+	%\subtitle{Scrum: Sviluppato e sostenuto da \\ Ken Schwaber e Jeff Sutherland}
+%	\subsubtitle{Febbraio 2010}
+%	\author{Traduzione Italiana a cura di Carlo Beschi e Mirco Veltri}
+	%\presentedto{SCRUM.ORG -- http://scrum.org}
 	\date{}
 
 	\maketitle
