@@ -2,3 +2,6 @@
 ## http://scrum.org
 
 * Wiki: http://wiki.github.com/indaco/scrumguide-ita
+
+# Make pdf
+$ pdflatex scrumguide-ita.tex
