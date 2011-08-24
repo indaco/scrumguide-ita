@@ -1,7 +1,7 @@
-# ScrumGuide in Italiano
+# ScrumGuide v. 2011 in Italiano
 ## http://scrum.org
 
-* Wiki: http://wiki.github.com/indaco/scrumguide-ita
+* Wiki: https://github.com/indaco/scrumguide-ita/wiki/v.-2011
 
-# Make pdf
+# Make PDF: Compile twice to generate TOC
 $ pdflatex scrumguide-ita.tex
