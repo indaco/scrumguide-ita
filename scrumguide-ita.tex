@@ -1,3 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SCRUM Guide v. 2011 - main latex file %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[a4paper,12pt,oneside,titlepage]{article}
 
 \usepackage[plainpages=false]{hyperref}
@@ -8,11 +12,18 @@
 \usepackage{color}
 \usepackage[layout=modern]{./layout/advancedcoverpage}
 \usepackage[scaled=.98]{helvet}
+
 % Header and Footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\cfoot{© 2008-2010 Ken Schwaber and Jeff Sutherland, All Rights Reserved} 
-\rfoot{ | \thepage} 
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{© 1991-2011 Ken Schwaber and Jeff Sutherland, All Rights Reserved} 
+\cfoot{}
+\rfoot{| \thepage} 
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 % Scrum logo
 \usepackage[cc]{./layout/titlepic}
@@ -21,47 +32,21 @@
 
 \linespread{1.2}
 \definecolor{Blue}{RGB}{63, 99, 141}
-%\hyphenation{pre-ve-di-bi-li-t\`a, riu-sci-re, esi-ste-re, in-te-ra-zio-ne}
+\definecolor{SkyBlue}{RGB}{63, 99, 141}
 
-% TIP Command
-\newcommand{\tip}[1]{
-\vspace{0.4cm}
-\fbox{
-\begin{minipage}{0.9\textwidth}
-\begin{large}Consiglio\end{large}\\
-{\color{Blue}{#1}}
-\end{minipage}
-}
-\vspace{0.4cm}
-\linebreak
-}
-
-% TALE Command
-\newcommand{\tale}[1]{
-\vspace{0.6cm}
-\begin{minipage}{0.9\textwidth}
-{\color{Blue}{#1}}
-\end{minipage}
-\vspace{0.6cm}
-\linebreak
-}
-
-%%
-% Document
-%%%
+%%% Document
 \begin{document}
 	\date{}
-
+	\title{}
 	\maketitle
-	\clearpage\pagenumbering{arabic}
+	\thispagestyle{fancy}
 	\sffamily
 
-	\input{text/sec1} % Introduzione e Ringraziamenti
-	\input{text/sec2} % Scopo, La Teoria Di Scrum
-	\input{text/sec3} % Il Concetto Di Scrum
-	\input{text/sec4} % I Ruoli In Scrum
-	\input{text/sec5} % La Gestione Del Tempo
-	\input{text/sec6} % Gli Artefatti
-	\input{text/sec7} % Considerazion Finali
-	
+	\input{text/sec1} % Scopo della Guida a Scrum, Overview di Scrum
+	\input{text/sec2} % La Teoria di Scrum, Scrum
+	\input{text/sec3} % Scrum Team
+	\input{text/sec4} % Gli Eventi di Scrum
+	\input{text/sec5} % Gli Artefatti di Scrum
+	\input{text/sec6} % Definizione di “Fatto”
+	\input{text/sec7} % Conclusioni, Ringraziamenti, Revisioni
 \end{document}
