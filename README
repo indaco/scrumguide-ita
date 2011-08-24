@@ -1,7 +1,7 @@
-# ScrumGuide in Italiano
-## http://scrum.org
+# ScrumGuide 2010 in Italiano
+## http://www.scrum.org/scrumguides/
 
-* Wiki: http://wiki.github.com/indaco/scrumguide-ita
+* Wiki: https://github.com/indaco/scrumguide-ita/wiki/v.-2010
 
 # Make pdf
 $ pdflatex scrumguide-ita.tex
