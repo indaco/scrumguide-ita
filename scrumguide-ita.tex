@@ -13,26 +13,52 @@
 \usepackage[layout=modern]{./layout/advancedcoverpage}
 \usepackage[scaled=.98]{helvet}
 
+% hyperref setup to make linkable toc items 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+	ps2pdf, 
+	bookmarks=true, 
+	bookmarksnumbered=false, 
+	bookmarksopen=false, 
+	linkcolor=black
+	linktocpage,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Miscellaneous
+\linespread{1.2}
+\definecolor{Blue}{RGB}{63, 99, 141}
+\definecolor{SteelBlue}{RGB}{70, 130, 180}
+\newcommand*\toccolor{
+	\color{Blue}
+}
+
+% Format TOC
+\usepackage[titles]{tocloft}
+%\renewcommand{\cftsecleader}{\toccolor\cftdotfill{\cftsecdotsep}}
+%\renewcommand*\cftsecpagefont{\toccolor}
+\renewcommand*\cftsecfont{\fontsize{11}{13}\usefont{OT1}{phv}{c}{n}\selectfont}
+
 % Header and Footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{}
 \chead{}
 \rhead{}
-\lfoot{© 1991-2011 Ken Schwaber and Jeff Sutherland, All Rights Reserved} 
+\lfoot{© 1991-2011 Ken Schwaber e Jeff Sutherland, All Rights Reserved} 
 \cfoot{}
 \rfoot{| \thepage} 
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 % Scrum logo
 \usepackage[cc]{./layout/titlepic}
 \usepackage{graphicx}
 \titlepic{\includegraphics[width=\textwidth]{./images/scrum_logo.jpg}}
-
-\linespread{1.2}
-\definecolor{Blue}{RGB}{63, 99, 141}
-\definecolor{SteelBlue}{RGB}{70, 130, 180}
 
 %%% Document
 \begin{document}
@@ -40,9 +66,12 @@
 	\title{}
 	\maketitle
 	\thispagestyle{fancy}
+	\tocloftpagestyle{fancy}
+	\tableofcontents
+	\newpage
 	\sffamily
-
-	\input{text/sec1} % Scopo della Guida a Scrum, Overview di Scrum
+	
+	\input{text/sec1} % Scopo della Guida Scrum, Overview di Scrum
 	\input{text/sec2} % La Teoria di Scrum, Scrum
 	\input{text/sec3} % Scrum Team
 	\input{text/sec4} % Gli Eventi di Scrum
