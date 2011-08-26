@@ -17,12 +17,12 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
-	ps2pdf, 
-	bookmarks=true, 
-	bookmarksnumbered=false, 
-	bookmarksopen=false, 
-	linkcolor=black
-	linktocpage,
+    ps2pdf, 
+    bookmarks=true, 
+    bookmarksnumbered=false, 
+    bookmarksopen=false, 
+    linkcolor=black
+    linktocpage,
     citecolor=black,
     filecolor=black,
     linkcolor=black,
@@ -33,8 +33,9 @@
 \linespread{1.2}
 \definecolor{Blue}{RGB}{63, 99, 141}
 \definecolor{SteelBlue}{RGB}{70, 130, 180}
+\definecolor{grey53}{RGB}{135, 135, 135}
 \newcommand*\toccolor{
-	\color{Blue}
+    \color{Blue}
 }
 
 % Format TOC
@@ -42,6 +43,7 @@
 %\renewcommand{\cftsecleader}{\toccolor\cftdotfill{\cftsecdotsep}}
 %\renewcommand*\cftsecpagefont{\toccolor}
 \renewcommand*\cftsecfont{\fontsize{11}{13}\usefont{OT1}{phv}{c}{n}\selectfont}
+\renewcommand*\cftsubsecfont{\fontsize{10}{12}\usefont{OT1}{phv}{c}{n}\selectfont}
 
 % Header and Footer
 \usepackage{fancyhdr}
@@ -49,7 +51,7 @@
 \lhead{}
 \chead{}
 \rhead{}
-\lfoot{© 1991-2011 Ken Schwaber e Jeff Sutherland, All Rights Reserved} 
+\lfoot{\small{© 1991-2011 Ken Schwaber e Jeff Sutherland, All Rights Reserved}}
 \cfoot{}
 \rfoot{| \thepage} 
 \renewcommand{\headrulewidth}{0pt}
@@ -62,20 +64,20 @@
 
 %%% Document
 \begin{document}
-	\date{}
-	\title{}
-	\maketitle
-	\thispagestyle{fancy}
-	\tocloftpagestyle{fancy}
-	\tableofcontents
-	\newpage
-	\sffamily
+    \date{}
+    \title{}
+    \maketitle
+    \thispagestyle{fancy}
+    \tocloftpagestyle{fancy}
+    \tableofcontents
+    \newpage
+    \sffamily
 	
-	\input{text/sec1} % Scopo della Guida Scrum, Overview di Scrum
-	\input{text/sec2} % La Teoria di Scrum, Scrum
-	\input{text/sec3} % Scrum Team
-	\input{text/sec4} % Gli Eventi di Scrum
-	\input{text/sec5} % Gli Artefatti di Scrum
-	\input{text/sec6} % Definizione di “Fatto”
-	\input{text/sec7} % Conclusioni, Ringraziamenti, Revisioni
+    \input{text/sec1} % Scopo della Guida Scrum, Overview di Scrum
+    \input{text/sec2} % La Teoria di Scrum, Scrum
+    \input{text/sec3} % Scrum Team
+    \input{text/sec4} % Gli Eventi di Scrum
+    \input{text/sec5} % Gli Artefatti di Scrum
+    \input{text/sec6} % Definizione di “Fatto”
+    \input{text/sec7} % Conclusioni, Ringraziamenti, Revisioni
 \end{document}
