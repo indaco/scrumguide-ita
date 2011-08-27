@@ -1,85 +1,208 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SECTION 4 : Scrum Roles %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{\color{Blue}{I RUOLI IN SCRUM}}
-\label{sec:roles}
-Il Team Scrum \`e formato dallo Scrum Master, dal Product Owner e dal Team. I membri del team sono chiamati maiali
-(pigs). Chiunque altro è un pollo (chicken). I ''polli'' non possono dire ai ''maiali'' come fare il loro lavoro.
-La metafora di polli e maiali prende spunto dalla seguente storiella: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SECTION 4 : Gli Eventi di Scrum %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\tale{"Ci sono un pollo e un maiale, e a un certo punto
-il pollo dice: - Apriamo un ristorante! Il maiale ci pensa un po' su e poi chiede: - E come lo chiameremmo questo
-ristorante? Il pollo risponde: - Uova e prosciutto! Al che il maiale dice: - No grazie, tu parteciperesti, ma solo io
-sarei coinvolto seriamente!"}
+\section*{\color{Blue}{Gli Eventi di Scrum}}% (fold)
+\label{sec:events}
+\addcontentsline{toc}{section}{Gli Eventi di Scrum}
+\pdfbookmark[10]{Gli Eventi di Scrum}{events}
+Gli eventi previsti sono utilizzati in Scrum per creare regolarit\`a e ridurre al minimo la necessit\`a di riunioni non 
+definite da Scrum stesso. Scrum utilizza eventi time-box, in modo che ogni evento ha una durata massima. Questo assicura che una 
+quantit\`a appropriata di tempo è trascorsa pianificando senza permettere l'introduzione di sprechi nel processo di pianificazione. \newline
+\\Oltre allo stesso Sprint, che \`e un contenitore di tutti gli altri eventi, ogni evento in Scrum \`e l'occasione per 
+ispezionare ed adattare qualcosa. Questi eventi sono specificamente progettati per consentire trasparenza critica e ispezione. 
+La mancata inclusione di uno qualsiasi dei risultati di questi eventi riduce la trasparenza ed \`e un'occasione persa per 
+ispezionare e adattarsi.
+
+\subsection*{\color{SteelBlue}{Lo Sprint}}% (fold)
+\label{sec:sprint}
+\addcontentsline{toc}{subsection}{Lo Sprint}
+\pdfbookmark[11]{Lo Sprint}{sprint}
+
+Il cuore di Scrum è uno Sprint, una time-box di un mese o meno durante il quale un ``Fatto'', utilizzabile, e un Incremento di  
+prodotto potenzialmente rilasciabile \`e stato creato. Gli Sprint hanno una durata costante durante uno sforzo di sviluppo. Un 
+nuova Sprint si avvia immediatamente dopo la conclusione della Sprint precedente. \newline
+\\Lo Sprint contiene e consiste del meeting Sprint Planning, del Daily Scrum, del lavoro di sviluppo, del meeting Sprint Review 
+e della Sprint Retrospective. \newline
+\\Durante uno Sprint:
+
+\begin{itemize}
+	\item Non vengono apportate modifiche che potrebbero influenza l'obiettivo dello Sprint;
+	\item La composizione del Team di Sviluppo e gli obiettivi di qualit\`a rimangono costanti; e,
+	\item L'ambito pu\`o essere chiarito e rinegoziato tra il Product Owner ed il Team di Sviluppo quando si sar\`a imparato di 
+	pi\`u.
+\end{itemize}
+
+Ogni Sprint pu\`o essere considerato un progetto con un orizzonte non pi\`u lungo di un mese. Come i progetti, gli Sprint sono 
+utilizzabili per realizzare qualcosa. Ogni Sprint ha una definizione di ci\`o che si va a costruire, un progetto e un piano 
+flessibile che guideranno la costruzione, il lavoro svolto e il prodotto risultante. \newline
+\\Gli Sprint sono limitati ad un mese di calendario. Quando uno Sprint ha un orizzonte troppo lungo la definizione di ci\`o che 
+viene costruito pu\`o cambiare, pu\`o aumentare la complessit\`a ed il rischio. Lo Sprint, almeno ogni mese solare, permette la 
+prevedibilit\`a assicurando il controllo e l'dattamento del progresso verso un obiettivo. Lo Sprint limita anche il rischio di 
+un mese di costo.
+
+\subsubsection*{\color{SteelBlue}{Cancellare uno Sprint}}% (fold)
+\label{sec:cancelling_sprint}
+\pdfbookmark[11]{Cancellare uno Sprint}{cancelling_sprint}
+Uno Sprint pu\`o essere cancellato prima che la finestra di tempo associata si concluda. Solo il Product Owner ha 
+l'autorit\`a di annullare lo Sprint, anche se lui o lei pu\`o farlo anche sotto l'influenza degli stakeholder, del Team di 
+Sviluppo o dello Scrum Master.\newline
+\\Uno Sprint dovrebbe esser cancellato se l'Obiettivo di Sprint diventa obsoleto. Questo potrebbe verificarsi se la societ\`a 
+cambia direzione o se cambiano le condizioni di mercato o della tecnologia. In generale, uno Sprint deve essere annullato se 
+non ha pi\`u senso date le circostanze. Ma, data la sua breve durata, la cancellazione raramente ha senso. \newline
+\\Quando uno Sprint viene annullato, ogni elemento del Product Backlog completato e ``Fatto'' viene esaminato. Se parti del 
+lavoro sono state rilasciate, il Product Owner tipicamente le accetta. Tutte le voci incomplete del Product Backlog vengono ristimare e 
+reimmesse nel Product Backlog. Il lavoro svolto su di esse si deprezza rapidamente e deve essere frequentemente ristimato. \newline
+\\Le cancellazioni degli Sprint consumano risorse, dal momento che tutti vanno coinvolti in un altro Sprint Planning 
+Meeting affinch\`e si possa avviare un altro Sprint. Le cancellazioni degli Sprint sono spesso traumatiche per il Team Scrum e 
+sono molto rare.
+% subsubsection cancelling_sprint (end)
+% subsection sprint (end)
+
+\subsection*{Sprint Plannig Meeting} % (fold)
+\label{sub:sprint_plannig_meeting}
+\addcontentsline{toc}{subsection}{Sprint Plannig Meeting}
+\pdfbookmark[11]{Sprint Plannig Meeting}{sprint_plannig_meeting}
+Il lavoro da svolgere  nello Sprint \`e pianificato durante lo Sprint Planning Meeting. Questo piano \`e creato dal lavoro 
+collaborativo dell'intero Team Scrum. \newline
+\\Il meeting Sprint Planning \`e un incontro della durata di otto ore per un Sprint di un mese. Per Sprint pi\`u brevi, 
+l'evento \`e proporzionalmente pi\`u breve. Ad esempio, Sprint di due settimane hanno un meeting Sprint Planning di quattro 
+ore. \newline
+\\Il meeting Lo Sprint Planning si compone di due parti, ognuna delle quali della durata pari alla met\`a della durata del meeting 
+Sprint Planning Meeting. Le due parti rispondono rispettivamente alle seguenti domande:
+
+\begin{itemize}
+	\item Cosa sar\`a rilasciato nell'Incremento derivante dal prossimo Sprint?
+	\item Come sar\`a fatto il lavoro necessario a garantire il raggiungimento dell'Incremento?
+\end{itemize}
+
+\subsubsection*{Parte 1: Cosa sar\`a fatto in questo Sprint?} % (fold)
+\label{ssub:part_one}
+In questa parte, il Team di Sviluppo lavora per prevedere le funzionalit\`a che saranno sviluppate durante lo Sprint. Il 
+Product Owner presenta le voci ordinate del Product Backlog al Team di Sviluppo e l'intero Team Scrum collabora sulla 
+comprensione del lavoro dello Sprint. \newline
+\\L'input per questo incontro sono il Product Backlog, l'ultimo Incremento prodotto, la capacit\`a di proiezione del Team di 
+Sviluppo durante lo Sprint e le performance passate del Team di Sviluppo. Il numero di elementi selezionati dal Product Backlog 
+per lo Sprint \`e definito dal Team di Sviluppo. Soltanto il Team di Sviluppo \`e in grado di valutare cosa pu\`o compiere 
+durante il prossimo Sprint. \newline
+\\Dopo che il Team di Sviluppo ha previsto le voci del Product Backlog che consegner\`a con lo Sprint, il Team Scrum definisce 
+l'Obiettivo di Sprint. Si tratta dell'obiettivo che sar\`a raggiunto entro lo Sprint attraverso l'implementazione del Product 
+Backlog e fornisce una guida per il Team di Sviluppo sul perch\`e si sta costruendo l'Incremento.
+% subsubsection part_one (end)
+
+\subsubsection*{Parte 2: Come si far\`a il lavoro scelto?} % (fold)
+\label{ssub:parte_2_come_si_otterr`a_quello_che_`e_stato_scelto_}
+Dopo aver selezionato il lavoro dello Sprint, il Team di Svilupo decide come costruir\`a, durante lo Sprint, questa 
+funzionalit\`a in un Incremento ``Fatto'' del prodotto. Le voci del Product Backlog selezionate per lo Sprint pi\`u il piano 
+per la consegna definiscono lo Sprint Backlog. \newline
+\\Il Team di Sviluppo solitamente inizia con la progettazione del sistema e il lavoro necessario per convertire il Product 
+Backlog in un Incremento del prodotto. Il lavoro pu\`o essere di varie dimensioni o sforzo stimato. Tuttavia, una quantit\`a 
+sufficiente di lavoro \`e pianificata durante il meeting Sprint Planning per il Team di Sviluppo per prevedere ci\`o che ritiene 
+di poter fare nel prossimo Sprint. Il lavoro pianificato per i primi giorni dello Sprint dal Team di Sviluppo viene suddiviso 
+in unit\`a di un giorno o meno entro la fine di questo meeting. Il Team di Sviluppo si auto-organizza per intraprendere il 
+lavoro contenuto nello Sprint Backlog, sia durante lo Sprint Planning meeting che quando necessario durante l'intero Sprint. \newline
+\\Il Product Owner pu\`o essere presente durante la seconda parte dell'incontro di Sprint Planning per chiarire le voci 
+selezionate dal Product Backlog e per contribuire a raggiungere dei compromessi. Se il Team di Sviluppo determina che c'\`e 
+troppo o troppo poco lavoro, pu\`o rinegoziare le voci dello Sprint Backlog con il Product Owner. Il Team di Sviluppo pu\`o 
+anche invitare altre persone a partecipare al meeting per una consulenza tecnica o di dominio. \newline
+\\Alla fine dell'incontro di Sprint Planning, il Team di Sviluppo dovrebbe essere in grado di spiegare al Product Owner e allo 
+Scrum Master come intende lavorare, in quanto team auto-organizzato, per raggiungere l'Obiettivo di Sprint e creare 
+l'Incremento previsto.
+% subsubsection part_2 (end)
 
 
-\subsection*{\color{Blue}{LO SCRUM MASTER}}
-\label{sec:scrummaster}
-Lo Scrum Master \`e responsabile del fatto che il Team Scrum aderisca ai valori, alle pratiche e alle regole di Scrum.
-Lo Scrum Master aiuta il Team e l'organizzazione in cui esso opera ad adottare Scrum. Lo Scrum Master insegna al Team,
-e lo guida a essere pi\`u produttivo e ad aumentare la qualit\`a dei prodotti che sviluppa. Lo Scrum Master aiuta il
-Team a comprendere e utilizzare i concetti di autoorganizzazione e cross-funzionalit\`a.\\ Lo Scrum Master inoltre aiuta il
-Team a fare del proprio meglio in un ambiente organizzativo che pu\`o non essere ancora ottimizzato per lo sviluppo di
-prodotti complessi. Quando lo Scrum Master contribuisce alla realizzazione di questi cambiamenti, parliamo di
-eliminazione di ostacoli. 
+\subsubsection*{Sprint Goal} % (fold)
+\label{ssub:sprint_goal}
+Lo Sprint Goal d\`a al Team di Sviluppo una certa flessibilit\`a per quanto riguarda le funzionalit\`a che saranno implementate 
+durante lo Sprint. \newline
+\\Mentre il Team di Sviluppo lavora, non perde mai di vista di questo obiettivo. Per soddisfare l'obiettivo, il Team implementa le 
+funzionalit\`a e la tecnologia. Se il lavoro risulta essere diverso da quello previsto dal Team di Sviluppo allora i membri 
+del Team collaborano con il Product Owner per negoziare l'ambito dello Sprint Backlog all'interno dello Sprint. \newline
+\\L'Obiettivo di Sprint pu\`o essere considerato una milestone nella pi\`u ampia roadmap del prodotto.
+% subsubsection sprint_goal (end)
+% subsection sprint_plannig_meeting (end)
 
-\tip{Lo Scrum Master lavora assieme ai clienti e ai manager per identificare un Product Owner. Spiega al
-Product Owner come fare il suo lavoro. Il Product Owner deve essere in grado di gestire l'ottimizzazione del valore del
-prodotto usando Scrum. Se non lo riesce a fare, ne riteniamo responsabile lo Scrum Master.}
+\subsection*{\color{SteelBlue}{Daily Scrum}}% (fold)
+\label{sec:dailyscrum}
+\addcontentsline{toc}{subsection}{Daily Scrum}
+\pdfbookmark[13]{Daily Scrum}{dailyscrum}
+L'incontro Daily Scrum \`e un evento della durata di 15 minuti che serve al Team di Sviluppo per sincronizzare le attivit\`a e creare un 
+piano per le prossime 24 ore. Questo viene fatto controllando il lavoro svolto dopo l'ultimo Daily Scrum e la previsione del lavoro che si 
+svolger\`a prima del prossimo meeting. \newline
+\\Il Daily Scrum si svolge allo stesso orario e luogo ogni giorno per ridurre la complessit\`a. Durante l'incontro, ogni membro del team di 
+Sviluppo spiega:
 
-\tip{Lo Scrum Master pu\`o essere un membro del team, ad esempio, uno sviluppatore che ha dei task assegnati
-all'interno dello Sprint. Tuttavia, questo spesso porta a conflitti quando lo Scrum Master si trova a dover scegliere
-tra la rimozione di ostacoli e lo svolgimento di task assegnati a lui. Lo Scrum Master non dovrebbe essere mai il
-Product Owner.}
+\begin{itemize}
+    \item Che cosa è stato fatto dopo l'ultima riunione?
+    \item Che cosa si farà prima della prossima riunione?
+    \item Quali sono gli ostacoli incontrati?
+\end{itemize}
 
-\subsection*{\color{Blue}{IL PRODUCT OWNER}}
-\label{sec:productowner}
-Il Product Owner ha la responsabilit\`a, esclusivamente sua, di gestire il Product Backlog, e di garantire il valore
-del lavoro svolto dal Team. Il Product Owner mantiene il Product Backlog e garantisce che sia visibile a tutti. Tutti
-sanno quali sono gli elementi che hanno priorit\`a maggiore, e in questo modo tutti sanno su cosa si andr\`a, a
-lavorare. \\ Il Product Owner \`e una persona, e non un comitato. Possono esserci dei comitati, che consigliano o
-influenzano questa persona, ma chiunque voglia cambiare la priorit\`a di un elemento deve convincere il Product Owner.
-Le aziende che adottano Scrum potranno notare con il tempo come esso influenza i modi in cui vengono stabilite
-priorit\`a e requisiti.
+Il Team di Sviluppo utilizza il Daily Scrum per valutare i progressi verso l'Obiettivo di Sprint e per valutare come il progresso \`e il 
+linea verso il completamento del lavoro dello Sprint Backlog. Il Daily Scrum ottimizza la probabilit\`a che il Team di Sviluppo raggiunga 
+l'Obiettivo di Sprint. Il Team di Sviluppo. Il Team di Sviluppo si incontra spesso subito dopo il Daily Scrum per ri-pianificare il resto 
+del lavoro dello Sprint. Ogni giorno il Team di Sviluppo dovrebbe essere in grado di spiegare al Product Owner e allo Scrum Master come 
+intende lavorare insieme come team auto-organizzatoz per raggiungere l'obiettivo e creare l'incremento atteso nel resto dello Sprint. \newline
+\\Lo Scrum Master assicura che il Team di Sviluppo tenga la riunione ma il Team \`e responsabile della conduzione del Daily Scrum.  Lo
+Scrum Master insegna alla squadra a mantenere il Daily Scrum della durata di 15 minuti. \newline
+\\Lo Scrum Master impone la regola che soltanto i membri del Development Team possono partecipare al Daily Scrum. Questo incontro non \`e 
+uno status meeting ed \`e rivolto alle persone che trasformano le voci del Product Backlog in un Incremento. \newline
+\\ Il Daily Meeting migliora le comunicazioni, elimina altri incontri, identifica e rimuove gli ostacoli allo sviluppo, evidenzia e 
+promuove il rapido processo decisionale e migliora il livello di conoscenza del progetto da parte del Team di Sviluppo. Rappresenta un 
+incontro chiave di ispezione e adattamento.
 
-\tip{Per lo sviluppo di prodotti commerciali, il Product Owner pu\`o essere il Product Manager. Per lo
-sviluppo in-house, il Product Owner potrebbe essere il responsabile della funzione aziendale che viene automatizzata.}
+% subsubsection dailyscrum (end)
 
-\tip{Il Product Owner pu\`o essere un membro del Team, che fa nello stesso tempo anche lavoro di sviluppo.
-Questa ulteriore responsabilit\`a pu\`o disturbare l'abilit\`a del Product Owner di lavorare con i vari stakeholder. In
-ogni caso, il Product Owner non pu\`o mai essere lo Scrum Master.}
+\subsection*{\color{SteelBlue}{Sprint Review}}% (fold)
+\label{sec:sprint_review}
+\addcontentsline{toc}{subsection}{Sprint Review}
+\pdfbookmark[14]{Sprint Review}{sprint_review}
+Alla fine della Sprint si tiene la Sprint Review per ispezionare l'incremento e adattare, se necessario, il Product Backlog. 
+Durante la riunione di Sprint Review il Team di Sviluppo e gli stakeholder collaborano su ci\`o che \`e stato fatto durante lo Sprint. 
+Sulla base di questo e dei cambiamenti al Product Backlog fatti durante lo Sprint, i partecipanti collaborano sulle prossime cose che 
+potrebbero esser fatte. Si tratta di un incontro informale e la presentazione dell'Incremento ha lo scopo di suscitare commenti e 
+promuovere la collaborazione. \newline
+\\Si tratta di un incontro della durata di quattro ore per uno Sprint di un mese. La durata \`e proporzionalmente inferiore per Sprint 
+pi\`u brevi. Ad esempio, per uno Sprint di due settimane l'incontro di Sprint Review dura due ore. \newline
+\\La Sprint Review include i seguenti elementi:
 
-Affinch\`e il Product Owner abbia successo, all'interno dell'organizzazione tutti devono rispettare le sue decisioni. A
-nessuno \`e permesso dire al Team di lavorare con un diverso ordine di priorit\`a, e i Team non sono autorizzati ad
-ascoltare chi sostiene il contrario. Le decisioni del Product Owner sono visibili nel contenuto e nell'ordine delle
-priorit\`a del Product Backlog. Questa visibilit\`a richiede al Product Owner di dare del proprio meglio, e rende il
-suo ruolo estremamente impegnativo, ma anche molto gratificante .\\
+\begin{itemize}
+	\item Il Product Owner identifica ci\`o che \`e stato ``Fatto'' e ci\`o che non \`e stato ``Fatto'';
+	\item Il Team di Sviluppo discute su cosa \`e andato bene durante lo Sprint, quali problemi si sono incontrati e come questi problemi  
+	sono stati risolti;
+	\item Il Team di Sviluppo mostra il lavoro che ha ``Fatto'' e risponde alle domande sull'Incremento;
+	\item Il Product Owner discute il Product Backlog cosi com'\`e. Lui o lei progetta la possibile data di completamento in base alla 
+	misura del progresso fino ad oggi; e,
+	\item L'intero gruppo collabora su cosa fare dopo, cos\`i la Sprint Review fornisce un prezioso contributo alle successive riunioni 
+	di Sprint Planning.     
+\end{itemize}
 
-\subsection*{\color{Blue}{IL TEAM}}
-\label{sec:team}
-I Team di sviluppatori trasformano i Product Backlog in incrementi di funzionalit\`a potenzialmente rilasciabili al
-termine di ogni Sprint. I Team sono inoltre cross-funzionalit\`a; i membri di un Team devono avere tutte le competenze
-necessarie per creare un incremento. I membri di un Team hanno spesso competenze specialistiche, quali programmazione,
-controllo di qualit\`a, business analysis, architettura, design dell'interfaccia utente, o del database. Tuttavia, le
-competenze che i membri del Team condividono ha - cio\`e, la capacit\`a di affrontare un requisito e trasformarlo in un
-prodotto utilizzabile - tendono ad essere pi\`u importanti di quelle che non condividono. Le persone che si rifiutano
-di scrivere codice perch\`e sono architetti o designer non si adattano bene a un Team. Tutti sono coinvolti, anche
-quando questo richiede imparare cose nuove, o ricordarne di antiche. Non ci sono titoli in un Team, e non ci sono
-eccezioni a questa regola. Inoltre, i Team non contengono sotto-team dedicati ad ambiti specifici, come ad esempio i
-test o l'attivit\`a di analisi.\\ 
-\linebreak In aggiunta, i Team sono auto-organizzati. Nessuno - neppure lo Scrum
-Master - dice al Team come trasformare un elemento del Product Backlog in un incremento di funzionalit\`a. Il Team
-gestisce questa cosa per conto proprio. Ogni membro del gruppo applica la propria esperienza a tutti i problemi
-incontrati. La sinergia che ne risultata migliora l'efficacia e l'efficanza complessiva dell'intero Team.\\ 
-\linebreak
-La dimensione ottimale per un Team \`e di sette persone, pi\`u due, o meno due. Quando in un Team ci sono meno di
-cinque membri, vi \`e una minore interazione, e ci\`o porta a un minore guadagno in termini di produttivit\`a. In
-pi\`u, il Team pu\`o incontrare vincoli di competenze durante lo Sprint e pu\`o non essere in grado di consegnare una
-parte rilasciabile del prodotto. Se invece ci sono pi\`u di nove membri, semplicemente il coordinamento risulta molto
-oneroso. I Team grandi generano troppa complessit\`a, che non \`e possibile gestire con un processo empirico. Tuttavia,
-abbiamo incontrato alcuni Team di successo che hanno superato il limite superiore o quello inferiore dell'intervallo
-dimensionale suggerito. Il Product Owner e lo Scrum Master non sono inclusi nel conteggio, a meno che non siano anche
-loro maiali.\\ 
-\linebreak La composizione del Team pu\`o cambiare al termine di uno Sprint. Ogni qual volta un Team
-cambia composizione, il livello di produttivit\`a raggiunto tramite l'auto-organizzazione diminuisce. Occorre prestare
-particolare attenzione quando si cambia la composizione del Team.
+Il risultato della Sprint Review \`e  un Product Backlog rivisto che definisce quali sue probabili voci sono selezionabili per 
+il prossimo Sprint. Il Product Backlog pu\`o anche essere modificato nel suo complesso per venire incontro a nuove opportunit\`a.
+
+% subsubsection sprint_review (end)
+
+\subsection*{\color{SteelBlue}{Sprint Retrospective}}% (fold)
+\label{sec:sprint_retrospective}
+\addcontentsline{toc}{subsection}{Sprint Retrospective}
+\pdfbookmark[15]{Sprint Retrospective}{sprint_retrospective}
+La Sprint Retrospective \`e l'occasione per il Team Scrum per ispezionare se stesso e creare un piano di miglioramento da attuare durante 
+il prossimo Sprint. Dopo la Sprint Review e prima del prossimo incontro di Sprint Planning, il Team Scrum si riunisce per lo Sprint
+Retrospective. Si tratta di una riunione di tre ore, per Sprint della durata mensile. In modo proporzionale allocate meno tempo per Sprint 
+pi\`u brevi. \newline
+\\Lo scopo della Sprint Retrospective \`e quello di:
+
+\begin{itemize}
+	\item Esaminare come l'ultimo Sprint \`e andato per quanto riguarda le persone, le relazioni, i processi e gli strumenti;
+	\item Identificare ed ordinare i maggiori elementi che son andati bene ed il potenziale di miglioramento; e,
+	\item Creare un piano per attuare i miglioramenti al modo di lavorare del Team Scrum.
+\end{itemize}
+
+\noindent Lo Scrum Master incoraggia il Team Scrum a migliorare, all'interno del framework di processo Scrum, il proprio processo di 
+sviluppo e le pratiche per rendere pi\`u efficace e divertente il prossimo Sprint. Durante ogni Sprint Retrospective, il Team Scrum 
+pianifica i modi per aumentare la qualit\`a del prodotto adattando la definizione di ``Fatto'' a seconda dei casi. \newline
+\\Entro la fine della Sprint Retrospective, il Team Scrum dovrebbe aver individuato i miglioramenti che saranno implementati nel prossimo 
+Sprint. Attuare tali miglioramenti durante il prossimo Sprint \`e l'adattamento all'ispezione del Team Scrum stesso. Anche se i 
+miglioramenti possono essere implementati in ogni momento, la Sprint Retrospective fornisce un evento dedicato focalizzato sull'ispezione e 
+l'adattamento.
+% subsubsection sprint_retrospective (end)
