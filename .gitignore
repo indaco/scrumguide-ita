@@ -4,8 +4,8 @@
 *.div
 *.aux
 *.out
+*.toc
 *.ps
-*.pdf
 *.off
 *.old
 *.gz
